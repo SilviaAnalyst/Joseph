@@ -1,31 +1,13 @@
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzhz_iKxNVQ3M91qCXmPoZvaZr8hy4hSMlmHlJkTypK-tlpt8dbH5zCkF5jnRSNQbe4/exec'
 
+const form = document.forms['contact-form']
 
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('registration-form');
-          
-            // Restore saved values
-            const savedData = JSON.parse(localStorage.getItem('registrationFormData'));
-            if (savedData) {
-              for (const [key, value] of Object.entries(savedData)) {
-                const input = form.elements[key];
-                if (input) input.value = value;
-              }
-            }
-          
-            // Save on every input change
-            form.addEventListener('input', () => {
-              const formData = new FormData(form);
-              const dataToSave = {};
-              formData.forEach((value, key) => {
-                dataToSave[key] = value;
-              });
-              localStorage.setItem('registrationFormData', JSON.stringify(dataToSave));
-            });
-          
-            // Clear storage on submit (optional)
-            form.addEventListener('submit', () => {
-              localStorage.removeItem('registrationFormData');
-            });
-          });
-          
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})

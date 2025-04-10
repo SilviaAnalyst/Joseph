@@ -12,56 +12,59 @@
     <h1>Registration Form</h1>
 
     <!-- Registration form -->
-    <form id="registration-form">
+    <form method="post" action="" name="contact-form">
         <label for="username">First Name:</label>
-        <input type="text" id="username" name="username" required><br>
+        <input type="text" id="username" name="firstname" required><br>
 
         <label for="middlename">middlename</label>
-        <input type="text" required><br>
+        <input type="text" name="middlename" required><br>
 
         <label for="lastname">Last Name:</label>
-        <input type="text"  required><br>
+        <input type="text" name="lastname"  required><br>
 
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" name="email" required><br>
 
        <label for="id">ID/ passport</label>
-         <select id="id" name="id">
+         <select id="id" >
             <option value="" disabled selected></option>
             <option value="option1">ID</option>
             <option value="option2">passport</option>
+            <input type="text" name="id">
         </select>
         
        
 
         <label for="Phone Number">Phone Number</label>
-        <input type="text" id="password" name="password" required><br>
+        <input type="text"  name="phone number" required><br>
 
-        <label for="Gender">Gender</label>
-        <select id="id" name="id">
+       
+        <label for="gender">gender</label>
+        <select id="gender"name="gender">
             <option value="" disabled selected></option>
-            <option value="option1">Male</option>
+            <option value="Male">Male</option>
             <option value="option2">Female</option>
         </select>
 
         <label for="Year of birth">Year of birth</label>
-        <input type="date" required ><br>
+        <input type="date" name="year of birth" required ><br>
 
-        <label for="Religion" >Religion</label>
-        <select id="id" name="id">
-            <option value="" disabled selected></option>
-            <option value="option1">Christian</option>
-            <option value="option2">Muslim</option>
-            <option value="option2">Aiethist</option> 
-            <option value="option2">Other</option>
-        </select>
+          <label for="religion">Religion</label>
+          <select id="religion" name="religion" required>
+            <option value="" disabled selected>Select your religion</option>
+            <option value="Christian">Christian</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Atheist">Atheist</option> 
+            <option value="Other">Other</option>
+          </select>
+
       
 
         <label for="County">County</label>
-        <select id="Political Party"name="Political Party">
+        <select id="Political Party"name="county">
             <option value="" disabled selected></option>
-            <option value="option1">Mombasa</option>
+            <option value="Mombasa">Mombasa</option>
             <option value="option2">Kwale</option>
             <option value="option3">Kilifi</option>
             <option value="option4">Tana River</option>
@@ -114,7 +117,7 @@
 
         
           <label for="county"> Constituency:</label>
-          <select id="county" name="county">
+          <select id="county" name="constituency">
             <option value="" disabled selected></option>
             <optgroup label="Mombasa">
               <option>Changamwe</option>
@@ -501,11 +504,11 @@
         
         
         <label for="Ward">Ward</label>
-        <input type="text"  required><br>
+        <input type="text" name="ward" required><br>
 
 
         <label for="Political Party">Political Party</label>
-         <select id="Political Party"name="Political Party">
+         <select id="Political Party" name="political party">
             <option value="" disabled selected></option>
             <option value="option1">People's Liberation Party</option>
             <option value="option2">The National Vision Party</option>
@@ -610,14 +613,7 @@
             </button>
         </div>
         
-
-
-        
-
-
-
-
-        <button type="submit">Register</button>
+        <input type="submit" value="Submit" id="submit">
     </form>
 
     <div id="status-message"></div>
