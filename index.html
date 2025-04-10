@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div>
-        <img src="" alt="logo">
-    </div>
+<div class="main">
+    
     <h1>Registration Form</h1>
 
     <!-- Registration form -->
@@ -30,11 +28,11 @@
 
        <label for="id">ID/ passport</label>
          <select id="id" name="id">
+            <option value="" disabled selected></option>
             <option value="option1">ID</option>
             <option value="option2">passport</option>
         </select>
-        <input type="text" required>
-
+        
        
 
         <label for="Phone Number">Phone Number</label>
@@ -42,15 +40,17 @@
 
         <label for="Gender">Gender</label>
         <select id="id" name="id">
+            <option value="" disabled selected></option>
             <option value="option1">Male</option>
             <option value="option2">Female</option>
         </select>
 
         <label for="Year of birth">Year of birth</label>
-        <input type="date" required><br>
+        <input type="date" required ><br>
 
-        <label for="Religion">Religion</label>
+        <label for="Religion" >Religion</label>
         <select id="id" name="id">
+            <option value="" disabled selected></option>
             <option value="option1">Christian</option>
             <option value="option2">Muslim</option>
             <option value="option2">Aiethist</option> 
@@ -60,6 +60,7 @@
 
         <label for="County">County</label>
         <select id="Political Party"name="Political Party">
+            <option value="" disabled selected></option>
             <option value="option1">Mombasa</option>
             <option value="option2">Kwale</option>
             <option value="option3">Kilifi</option>
@@ -111,15 +112,401 @@
         </select>
         
 
-        <label for="Constituency">Constituency</label>
-        <input type="text"  required><br>
-
+        
+          <label for="county"> Constituency:</label>
+          <select id="county" name="county">
+            <option value="" disabled selected></option>
+            <optgroup label="Mombasa">
+              <option>Changamwe</option>
+              <option>Jomvu</option>
+              <option>Kisauni</option>
+              <option>Nyali</option>
+              <option>Likoni</option>
+              <option>Mvita</option>
+            </optgroup>
+            <optgroup label="Kwale">
+              <option>Msambweni</option>
+              <option>Matuga</option>
+              <option>Lunga Lunga</option>
+              <option>Kinango</option>
+            </optgroup>
+            <optgroup label="Kilifi">
+              <option>Kaloleni</option>
+              <option>Rabai</option>
+              <option>Kilifi North</option>
+              <option>Kilifi South</option>
+              <option>Ganze</option>
+              <option>Malindi</option>
+              <option>Magarini</option>
+            </optgroup>
+            <optgroup label="Tana River">
+              <option>Garsen</option>
+              <option>Galole</option>
+              <option>Bura</option>
+            </optgroup>
+            <optgroup label="Lamu">
+              <option>Lamu East</option>
+              <option>Lamu West</option>
+            </optgroup>
+            <optgroup label="Taita Taveta">
+              <option>Taveta</option>
+              <option>Wundanyi</option>
+              <option>Mwatate</option>
+              <option>Voi</option>
+            </optgroup>
+            <optgroup label="Garissa">
+              <option>Garissa Township</option>
+              <option>Balambala</option>
+              <option>Lagdera</option>
+              <option>Dadaab</option>
+              <option>Fafi</option>
+              <option>Ijara</option>
+            </optgroup>
+            <optgroup label="Wajir">
+              <option>Wajir North</option>
+              <option>Wajir East</option>
+              <option>Tarbaj</option>
+              <option>Wajir West</option>
+              <option>Eldas</option>
+              <option>Wajir South</option>
+            </optgroup>
+            <optgroup label="Mandera">
+              <option>Mandera West</option>
+              <option>Banissa</option>
+              <option>Mandera North</option>
+              <option>Mandera South</option>
+              <option>Mandera East</option>
+              <option>Lafey</option>
+            </optgroup>
+            <optgroup label="Marsabit">
+              <option>Moyale</option>
+              <option>North Horr</option>
+              <option>Saku</option>
+              <option>Laisamis</option>
+            </optgroup>
+            <optgroup label="Isiolo">
+              <option>Isiolo North</option>
+              <option>Isiolo South</option>
+            </optgroup>
+            <optgroup label="Meru">
+              <option>Igembe South</option>
+              <option>Igembe Central</option>
+              <option>Igembe North</option>
+              <option>Tigania West</option>
+              <option>Tigania East</option>
+              <option>North Imenti</option>
+              <option>Buuri</option>
+              <option>Central Imenti</option>
+              <option>South Imenti</option>
+            </optgroup>
+            <optgroup label="Tharaka-Nithi">
+              <option>Maara</option>
+              <option>Chuka/Igambang'ombe</option>
+              <option>Tharaka</option>
+            </optgroup>
+            <optgroup label="Embu">
+              <option>Manyatta</option>
+              <option>Runyenjes</option>
+              <option>Mbeere South</option>
+              <option>Mbeere North</option>
+            </optgroup>
+            <optgroup label="Kitui">
+              <option>Mwingi North</option>
+              <option>Mwingi West</option>
+              <option>Mwingi Central</option>
+              <option>Kitui West</option>
+              <option>Kitui Rural</option>
+              <option>Kitui Central</option>
+              <option>Kitui East</option>
+              <option>Kitui South</option>
+            </optgroup>
+            <optgroup label="Machakos">
+              <option>Masinga</option>
+              <option>Yatta</option>
+              <option>Kangundo</option>
+              <option>Matungulu</option>
+              <option>Kathiani</option>
+              <option>Mavoko</option>
+              <option>Mwala</option>
+              <option>Machakos Town</option>
+            </optgroup>
+            <optgroup label="Makueni">
+              <option>Mbooni</option>
+              <option>Kilome</option>
+              <option>Kaiti</option>
+              <option>Makueni</option>
+              <option>Kibwezi West</option>
+              <option>Kibwezi East</option>
+            </optgroup>
+            <optgroup label="Nyandarua">
+              <option>Kinangop</option>
+              <option>Kipipiri</option>
+              <option>Ol Kalou</option>
+              <option>Ol Jorok</option>
+              <option>Ndaragwa</option>
+            </optgroup>
+            <optgroup label="Nyeri">
+              <option>Tetu</option>
+              <option>Kieni</option>
+              <option>Mathira</option>
+              <option>Othaya</option>
+              <option>Mukurweini</option>
+              <option>Nyeri Town</option>
+            </optgroup>
+            <optgroup label="Kirinyaga">
+              <option>Mwea</option>
+              <option>Gichugu</option>
+              <option>Ndia</option>
+              <option>Kirinyaga Central</option>
+            </optgroup>
+            <optgroup label="Murang'a">
+              <option>Kangema</option>
+              <option>Mathioya</option>
+              <option>Maragua</option>
+              <option>Kandara</option>
+              <option>Kigumo</option>
+              <option>Kiharu</option>
+              <option>Gatanga</option>
+            </optgroup>
+            <optgroup label="Kiambu">
+              <option>Gatundu South</option>
+              <option>Gatundu North</option>
+              <option>Juja</option>
+              <option>Thika Town</option>
+              <option>Ruiru</option>
+              <option>Githunguri</option>
+              <option>Kiambu</option>
+              <option>Kiambaa</option>
+              <option>Kabete</option>
+              <option>Kikuyu</option>
+              <option>Limuru</option>
+              <option>Lari</option>
+            </optgroup>
+            <optgroup label="Turkana">
+              <option>Turkana North</option>
+              <option>Turkana West</option>
+              <option>Turkana Central</option>
+              <option>Loima</option>
+              <option>Turkana South</option>
+              <option>Turkana East</option>
+            </optgroup>
+            <optgroup label="West Pokot">
+              <option>Kapenguria</option>
+              <option>Sigor</option>
+              <option>Kacheliba</option>
+              <option>Pokot South</option>
+            </optgroup>
+            <optgroup label="Samburu">
+              <option>Samburu West</option>
+              <option>Samburu North</option>
+              <option>Samburu East</option>
+            </optgroup>
+            <optgroup label="Trans Nzoia">
+              <option>Kwanza</option>
+              <option>Endebess</option>
+              <option>Saboti</option>
+              <option>Kiminini</option>
+              <option>Cherangany</option>
+            </optgroup>
+            <optgroup label="Uasin Gishu">
+              <option>Turbo</option>
+              <option>Moiben</option>
+              <option>Kapseret</option>
+              <option>Soi</option>
+              <option>Ainabkoi</option>
+              <option>Kesses</option>
+            </optgroup>
+            <optgroup label="Elgeyo Marakwet">
+              <option>Marakwet East</option>
+              <option>Marakwet West</option>
+              <option>Keiyo North</option>
+              <option>Keiyo South</option>
+            </optgroup>
+            <optgroup label="Nandi">
+              <option>Tinderet</option>
+              <option>Aldai</option>
+              <option>Nandi Hills</option>
+              <option>Chesumei</option>
+              <option>Emgwen</option>
+              <option>Mosop</option>
+            </optgroup>
+            <optgroup label="Baringo">
+              <option>Tiaty</option>
+              <option>Baringo North</option>
+              <option>Baringo Central</option>
+              <option>Baringo South</option>
+              <option>Mogotio</option>
+              <option>Eldama Ravine</option>
+            </optgroup>
+            <optgroup label="Laikipia">
+              <option>Laikipia West</option>
+              <option>Laikipia East</option>
+              <option>Laikipia North</option>
+            </optgroup>
+            <optgroup label="Nakuru">
+              <option>Molo</option>
+              <option>Njoro</option>
+              <option>Naivasha</option>
+              <option>Gilgil</option>
+              <option>Kuresoi South</option>
+              <option>Kuresoi North</option>
+              <option>Subukia</option>
+              <option>Rongai</option>
+              <option>Bahati</option>
+              <option>Nakuru Town West</option>
+              <option>Nakuru Town East</option>
+            </optgroup>
+            <optgroup label="Narok">
+              <option>Narok North</option>
+              <option>Narok East</option>
+              <option>Narok South</option>
+              <option>Narok West</option>
+              <option>Emurua Dikirr</option>
+              <option>Trans Mara West</option>
+            </optgroup>
+            <optgroup label="Kajiado">
+              <option>Kajiado North</option>
+              <option>Kajiado Central</option>
+              <option>Kajiado East</option>
+              <option>Kajiado West</option>
+              <option>Kajiado South</option>
+            </optgroup>
+            <optgroup label="Kericho">
+              <option>Ainamoi</option>
+              <option>Bureti</option>
+              <option>Belgut</option>
+              <option>Kipkelion East</option>
+              <option>Kipkelion West</option>
+              <option>Sigowet/Soin</option>
+            </optgroup>
+            <optgroup label="Bomet">
+              <option>Bomet East</option>
+              <option>Bomet Central</option>
+              <option>Chepalungu</option>
+              <option>Konoin</option>
+              <option>Sotik</option>
+            </optgroup>
+            <optgroup label="Kakamega">
+              <option>Lugari</option>
+              <option>Likuyani</option>
+              <option>Malava</option>
+              <option>Lurambi</option>
+              <option>Navakholo</option>
+              <option>Mumias West</option>
+              <option>Mumias East</option>
+              <option>Matungu</option>
+              <option>Butere</option>
+              <option>Khwisero</option>
+              <option>Shinyalu</option>
+              <option>Ikolomani</option>
+            </optgroup>
+            <optgroup label="Vihiga">
+              <option>Vihiga</option>
+              <option>Sabatia</option>
+              <option>Hamisi</option>
+              <option>Luanda</option>
+              <option>Emuhaya</option>
+            </optgroup>
+            <optgroup label="Bungoma">
+              <option>Mt. Elgon</option>
+              <option>Sirisia</option>
+              <option>Kabuchai</option>
+              <option>Bumula</option>
+              <option>Kanduyi</option>
+              <option>Webuye East</option>
+              <option>Webuye West</option>
+              <option>Kimilili</option>
+            </optgroup>
+            <optgroup label="Busia">
+              <option>Teso North</option>
+              <option>Teso South</option>
+              <option>Nambale</option>
+              <option>Matayos</option>
+              <option>Butula</option>
+              <option>Funyula</option>
+              <option>Budalang'i</option>
+            </optgroup>
+            <optgroup label="Siaya">
+              <option>Ugenya</option>
+              <option>Ugunja</option>
+              <option>Alego Usonga</option>
+              <option>Gem</option>
+              <option>Bondo</option>
+              <option>Rarieda</option>
+            </optgroup>
+            <optgroup label="Kisumu">
+              <option>Kisumu East</option>
+              <option>Kisumu West</option>
+              <option>Kisumu Central</option>
+              <option>Seme</option>
+              <option>Nyando</option>
+              <option>Muhoroni</option>
+              <option>Nyakach</option>
+            </optgroup>
+            <optgroup label="Homa Bay">
+              <option>Kasipul</option>
+              <option>Kabondo Kasipul</option>
+              <option>Karachuonyo</option>
+              <option>Rangwe</option>
+              <option>Homa Bay Town</option>
+              <option>Ndhiwa</option>
+              <option>Suba North</option>
+              <option>Suba South</option>
+            </optgroup>
+            <optgroup label="Migori">
+              <option>Rongo</option>
+              <option>Awendo</option>
+              <option>Suna East</option>
+              <option>Suna West</option>
+              <option>Uriri</option>
+              <option>Nyatike</option>
+              <option>Kuria West</option>
+              <option>Kuria East</option>
+            </optgroup>
+            <optgroup label="Kisii">
+              <option>Kitutu Chache North</option>
+              <option>Kitutu Chache South</option>
+              <option>Nyaribari Masaba</option>
+              <option>Nyaribari Chache</option>
+              <option>Bonchari</option>
+              <option>South Mugirango</option>
+              <option>Bomachoge Borabu</option>
+              <option>Bomachoge Chache</option>
+            </optgroup>
+            <optgroup label="Nyamira">
+              <option>Kitutu Masaba</option>
+              <option>West Mugirango</option>
+              <option>North Mugirango</option>
+              <option>Borabu</option>
+            </optgroup>
+            <optgroup label="Nairobi">
+              <option>Westlands</option>
+              <option>Dagoretti North</option>
+              <option>Dagoretti South</option>
+              <option>Lang'ata</option>
+              <option>Kibra</option>
+              <option>Roysambu</option>
+              <option>Kasarani</option>
+              <option>Ruaraka</option>
+              <option>Embakasi North</option>
+              <option>Embakasi South</option>
+              <option>Embakasi Central</option>
+              <option>Embakasi East</option>
+              <option>Embakasi West</option>
+              <option>Makadara</option>
+              <option>Kamukunji</option>
+              <option>Starehe</option>
+            </optgroup>
+          </select>
+        
+        
         <label for="Ward">Ward</label>
         <input type="text"  required><br>
 
 
         <label for="Political Party">Political Party</label>
          <select id="Political Party"name="Political Party">
+            <option value="" disabled selected></option>
             <option value="option1">People's Liberation Party</option>
             <option value="option2">The National Vision Party</option>
             <option value="option3">Labour Party of Kenya</option>
@@ -214,11 +601,15 @@
            
 
         </select>
-        <input type="submit" value="Opt-in"  required>
+       
+        <div class="but">
+
+            <button >Opt-in</button>
+            <button class="red">
+             <a href="https://ippms.orpp.or.ke/auth/login?ReturnUrl=%2FSelfService%2FPartyEnrollment%3F_gl%3D1%2Adp2w4a%2A_ga%2AODYxOTQ5OTA1LjE3NDQxOTc1MTM.%2A_ga_ZLNTCZ8EPZ%2AMTc0NDE5NzUxMi4xLjEuMTc0NDE5NzgzMy4wLjAuMA"  target="_blank">Opt-out</a>
+            </button>
+        </div>
         
-       <button>
-        <a href="https://ippms.orpp.or.ke/auth/login?ReturnUrl=%2FSelfService%2FPartyEnrollment%3F_gl%3D1%2Adp2w4a%2A_ga%2AODYxOTQ5OTA1LjE3NDQxOTc1MTM.%2A_ga_ZLNTCZ8EPZ%2AMTc0NDE5NzUxMi4xLjEuMTc0NDE5NzgzMy4wLjAuMA">Opt-out</a>
-       </button> 
 
 
         
@@ -234,5 +625,5 @@
 
     <script src="fun.js"></script>
 
-
+</div>
 </body>
