@@ -6,8 +6,17 @@ form.addEventListener('submit', e => {
   
   e.preventDefault()
   
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! Form is submitted" ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  .then(response => {
+    // Show the custom alert
+    const alertBox = document.getElementById('custom-alert');
+    alertBox.style.display = 'block';
+    
+    // Close the alert after clicking the button
+    document.getElementById('close-alert').addEventListener('click', () => {
+      alertBox.style.display = 'none';
+      window.location.reload();
+    });
+  })
+  .catch(error => console.error('Error!', error.message));
 })

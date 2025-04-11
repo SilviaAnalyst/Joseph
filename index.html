@@ -24,7 +24,7 @@
 
 
         <label for="email">Email:</label>
-        <input type="email" name="email" required><br>
+        <input id="email" type="email" name="email" required><br>
 
        <label for="id">ID/ passport</label>
          <select id="id" >
@@ -40,24 +40,30 @@
         <input type="text"  name="phone number" required><br>
 
        
-        <label for="gender">gender</label>
-        <select id="gender"name="gender">
-            <option value="" disabled selected></option>
-            <option value="Male">Male</option>
-            <option value="option2">Female</option>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
         </select>
+        
 
         <label for="Year of birth">Year of birth</label>
         <input type="date" name="year of birth" required ><br>
 
-          <label for="religion">Religion</label>
-          <select id="religion" name="religion" required>
-            <option value="" disabled selected>Select your religion</option>
-            <option value="Christian">Christian</option>
-            <option value="Muslim">Muslim</option>
-            <option value="Atheist">Atheist</option> 
-            <option value="Other">Other</option>
-          </select>
+        <label for="religion">Religion</label>
+        <select id="religion" name="religion" required>
+          <option value="" disabled selected></option>
+          <option value="Christian">Christian</option>
+          <option value="Muslim">Muslim</option>
+          <option value="Atheist">Atheist</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddhist">Buddhist</option>
+          <option value="Jewish">Jewish</option>
+          <option value="Sikh">Sikh</option>
+          <option value="Other">Other</option>
+        </select>
+        
 
       
 
@@ -65,52 +71,52 @@
         <select id="Political Party"name="county">
             <option value="" disabled selected></option>
             <option value="Mombasa">Mombasa</option>
-            <option value="option2">Kwale</option>
-            <option value="option3">Kilifi</option>
-            <option value="option4">Tana River</option>
-            <option value="option5">Lamu</option>
-            <option value="option6">Taita-Taveta </option>
-            <option value="option7">Garissa</option>
-            <option value="option8">Wajir</option>
-            <option value="option9">Mandera</option>
-            <option value="option10">Marsabit</option>
-            <option value="option11">Isiolo</option>
-            <option value="option12">Meru</option>
-            <option value="option13">Tharaka-Nithi</option>
-            <option value="option14">Embu</option>
-            <option value="option15">Kitui </option>
-            <option value="option16">Machakos</option>
-            <option value="option17">Makueni </option>
-            <option value="option18">Nyandarua</option>
-            <option value="option19">Nyeri</option>
-            <option value="option20">Kirinyaga</option>
-            <option value="option21">Murang'a</option>
-            <option value="option22">Kiambu </option>
-            <option value="option23">Turkana</option>
-            <option value="option24">West Pokot</option>
-            <option value="option25">Samburu</option>
-            <option value="option26">Trans-Nzoia</option>
-            <option value="option27">Uasin Gishu</option>
-            <option value="option28">Elgeyo- Mrakwet </option>
-            <option value="option29">Nandi</option>
-            <option value="option30">Baringo</option>
-            <option value="option31">Likipia</option>
-            <option value="option32">Nakuru</option>
-            <option value="option33">Narok</option>
-            <option value="option34">Kajiado </option>
-            <option value="option35">Kericho</option>
-            <option value="option36">Bomet</option>
-            <option value="option37">Kakamega</option>
-            <option value="option38">Vihiga </option>
-            <option value="option39">Bungoma</option>
-            <option value="option40">Busia</option>
-            <option value="option41">Siaya</option>
-            <option value="option42">Kisumu</option>
-            <option value="option43">Homa Bay</option>
-            <option value="option44">Migori</option>
-            <option value="option45">Kisii</option>
-            <option value="option46">Nyamira </option>
-            <option value="option47">Nairobi</option>
+            <option value="Kwale">Kwale</option>
+            <option value="Kilifi">Kilifi</option>
+            <option value="Tana River">Tana River</option>
+            <option value="Lamu">Lamu</option>
+            <option value="Taita-Taveta">Taita-Taveta </option>
+            <option value="Garissa">Garissa</option>
+            <option value="Wajir">Wajir</option>
+            <option value="Mandera">Mandera</option>
+            <option value="Marsabit">Marsabit</option>
+            <option value="Isiolo">Isiolo</option>
+            <option value="Meru">Meru</option>
+            <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+            <option value="Embu">Embu</option>
+            <option value="Kitui">Kitui </option>
+            <option value="Machakos">Machakos</option>
+            <option value="Makueni">Makueni </option>
+            <option value="Nyandarua">Nyandarua</option>
+            <option value="Nyerioption19">Nyeri</option>
+            <option value="Kirinyaga">Kirinyaga</option>
+            <option value="Murang'a">Murang'a</option>
+            <option value="Kiambu ">Kiambu </option>
+            <option value="Turkana">Turkana</option>
+            <option value="West Pokot">West Pokot</option>
+            <option value="Samburu">Samburu</option>
+            <option value="Trans-Nzoia">Trans-Nzoia</option>
+            <option value="Uasin Gishu">Uasin Gishu</option>
+            <option value="Elgeyo- Mrakwet">Elgeyo- Mrakwet </option>
+            <option value="Nandi">Nandi</option>
+            <option value="Baringo">Baringo</option>
+            <option value="Likipia">Likipia</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Narok">Narok</option>
+            <option value="Kajiado">Kajiado </option>
+            <option value="Kericho">Kericho</option>
+            <option value="Bomet">Bomet</option>
+            <option value="Kakamega">Kakamega</option>
+            <option value="Vihiga ">Vihiga </option>
+            <option value="Bungoma">Bungoma</option>
+            <option value="Busia">Busia</option>
+            <option value="Siaya">Siaya</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Homa Bay">Homa Bay</option>
+            <option value="Migori">Migori</option>
+            <option value="Kisii">Kisii</option>
+            <option value="Nyamira ">Nyamira </option>
+            <option value="Nairobi">Nairobi</option>
 
         </select>
         
@@ -504,103 +510,182 @@
         
         
         <label for="Ward">Ward</label>
-        <input type="text" name="ward" required><br>
+        
+        <select id="ward" name="ward" required>
+          <option value="" disabled selected></option>
+          
+          <option value="Langata">Langata (Langata, Nairobi)</option>
+          <option value="Westlands">Westlands (Westlands, Nairobi)</option>
+          <option value="Kibra">Kibra (Kibra, Nairobi)</option>
+          <option value="Embakasi Central">Embakasi Central (Embakasi, Nairobi)</option>
+          <option value="Roysambu">Roysambu (Roysambu, Nairobi)</option>
+          <option value="Kasarani">Kasarani (Kasarani, Nairobi)</option>
+          <option value="Dagoretti North">Dagoretti North (Dagoretti, Nairobi)</option>
+          <option value="Makadara">Makadara (Makadara, Nairobi)</option>
+          <option value="Bahari">Bahari (Kilifi, Kilifi)</option>
+          <option value="Mkomani">Mkomani (Kilifi Town, Kilifi)</option>
+          <option value="Junda">Junda (Kilifi Town, Kilifi)</option>
+          <option value="Tudor">Tudor (Mombasa, Mombasa)</option>
+          <option value="Tononoka">Tononoka (Mombasa, Mombasa)</option>
+          <option value="Majengo">Majengo (Mombasa, Mombasa)</option>
+          <option value="Ganjoni">Ganjoni (Mombasa, Mombasa)</option>
+          <option value="Kizingo">Kizingo (Mombasa, Mombasa)</option>
+          <option value="Changamwe">Changamwe (Mombasa, Mombasa)</option>
+          <option value="Port Reitz">Port Reitz (Mombasa, Mombasa)</option>
+          <option value="Airport">Airport (Mombasa, Mombasa)</option>
+          <option value="Miritini">Miritini (Mombasa, Mombasa)</option>
+          <option value="Shanzu">Shanzu (Mombasa, Mombasa)</option>
+          <option value="Bamburi">Bamburi (Kisauni, Mombasa)</option>
+          <option value="Kisauni">Kisauni (Kisauni, Mombasa)</option>
+          <option value="Nyali">Nyali (Nyali, Mombasa)</option>
+          <option value="Likoni">Likoni (Likoni, Mombasa)</option>
+          <option value="Mtongwe">Mtongwe (Likoni, Mombasa)</option>
+          <option value="Mwatate">Mwatate (Taita Taveta, Taita Taveta)</option>
+          <option value="Wundanyi">Wundanyi (Taita Taveta, Taita Taveta)</option>
+          <option value="Voi">Voi (Taita Taveta, Taita Taveta)</option>
+          <option value="Taveta">Taveta (Taita Taveta, Taita Taveta)</option>
+          <option value="Bura">Bura (Tana River, Tana River)</option>
+          <option value="Galole">Galole (Tana River, Tana River)</option>
+          <option value="Garsen">Garsen (Tana River, Tana River)</option>
+          <option value="Hola">Hola (Tana River, Tana River)</option>
+          <option value="Lamu West">Lamu West (Lamu, Lamu)</option>
+          <option value="Lamu East">Lamu East (Lamu, Lamu)</option>
+          <option value="Garissa Township">Garissa Township (Garissa, Garissa)</option>
+          <option value="Dadaab">Dadaab (Garissa, Garissa)</option>
+          <option value="Lagdera">Lagdera (Garissa, Garissa)</option>
+          <option value="Fafi">Fafi (Garissa, Garissa)</option>
+          <option value="Balambala">Balambala (Garissa, Garissa)</option>
+          <option value="Wajir East">Wajir East (Wajir, Wajir)</option>
+          <option value="Wajir West">Wajir West (Wajir, Wajir)</option>
+          <option value="Wajir South">Wajir South (Wajir, Wajir)</option>
+          <option value="Eldas">Eldas (Wajir, Wajir)</option>
+          <option value="Tarbaj">Tarbaj (Wajir, Wajir)</option>
+          <option value="Mandera East">Mandera East (Mandera, Mandera)</option>
+          <option value="Mandera West">Mandera West (Mandera, Mandera)</option>
+          <option value="Banissa">Banissa (Mandera, Mandera)</option>
+          <option value="Lafey">Lafey (Mandera, Mandera)</option>
+          <option value="Takaba">Takaba (Mandera, Mandera)</option>
+          <option value="Moyale">Moyale (Marsabit, Marsabit)</option>
+          <option value="Sololo">Sololo (Marsabit, Marsabit)</option>
+          <option value="Marsabit Central">Marsabit Central (Marsabit, Marsabit)</option>
+          <option value="North Horr">North Horr (Marsabit, Marsabit)</option>
+          <option value="Laisamis">Laisamis (Marsabit, Marsabit)</option>
+          <option value="Isiolo North">Isiolo North (Isiolo, Isiolo)</option>
+          <option value="Isiolo South">Isiolo South (Isiolo, Isiolo)</option>
+          <option value="Meru Town">Meru Town (Meru, Meru)</option>
+          <option value="Tigania West">Tigania West (Tigania, Meru)</option>
+          <option value="Tigania East">Tigania East (Tigania, Meru)</option>
+          <option value="Igembe Central">Igembe Central (Igembe, Meru)</option>
+          <option value="Igembe South">Igembe South (Igembe, Meru)</option>
+          <option value="Buuri">Buuri (Buuri, Meru)</option>
+          <option value="Tharaka">Tharaka (Tharaka, Meru)</option>
+          <option value="Chiakariga">Chiakariga (Tharaka, Meru)</option>
+          <option value="Mbeere South">Mbeere South (Mbeere, Embu)</option>
+          <option value="Mbeere North">Mbeere North (Mbeere, Embu)</option>
+          <option value="Manyatta">Manyatta (Manyatta, Embu)</option>
+          <option value="Runyenjes">Runyenjes (Runyenjes, Embu)</option>
+          <option value="Gichugu">Gichugu (Gichugu, Kirinyaga)</option>
+          <option value="Kirinyaga Central">Kirinyaga Central (Kirinyaga, Kirinyaga)</option>
+          <option value="Ndia">Ndia (Ndia, Kirinyaga)</option>
+
+        </select>
+
 
 
         <label for="Political Party">Political Party</label>
          <select id="Political Party" name="political party">
             <option value="" disabled selected></option>
-            <option value="option1">People's Liberation Party</option>
-            <option value="option2">The National Vision Party</option>
-            <option value="option3">Labour Party of Kenya</option>
-            <option value="option4">Mwangaza Tu Party</option>
-            <option value="option5">Party of Independent Candidate of Kenya</option>
-            <option value="option6">Devolution Empowerment Party </option>
-            <option value="option7">Kenya National Congress</option>
-            <option value="option8">Mazingira Green Party </option>
-            <option value="option9">National Democratic Movement</option>
-            <option value="option10">Wiper Democratic Movement</option>
-            <option value="option11">Democratic Party of Kenya</option>
-            <option value="option12">Party of National Unity</option>
-            <option value="option13">United Democratic Alliance </option>
-            <option value="option14">Agano Party</option>
-            <option value="option15">Kenya Social Congress </option>
-            <option value="option16">Orange Democratic Movement</option>
-            <option value="option17">People’s Party of Kenya </option>
-            <option value="option18">Forum for Restoration of DemocracyKenya</option>
-            <option value="option19"> Progressive Party of Kenya </option>
-            <option value="option20">Jubilee Party </option>
-            <option value="option21">Maendeleo Democratic Party</option>
-            <option value="option22">National Rainbow Coalition </option>
-            <option value="option23">Kenya African Democratic Union-Asili></option>
-            <option value="option24">Kenya Patriots Party</option>
-            <option value="option25">Communist Party of Kenya </option>
-            <option value="option26">Kenya African National Union</option>
-            <option value="option27">Safina Party</option>
-            <option value="option28">Chama Cha Uzalendo </option>
-            <option value="option29">National Agenda Party of Kenya</option>
-            <option value="option30">People’s Empowerment Party</option>
-            <option value="option31">Peoples Democratic Party</option>
-            <option value="option32">The New Democrats </option>
-            <option value="option33">United Democratic Movement</option>
-            <option value="option34">Shirikisho Party of Kenya </option>
-            <option value="option35">Party of Democratic Unity</option>
-            <option value="option36">Umoja na Maendeleo Party </option>
-            <option value="option37">United Party of Independent Alliance (UPIA)</option>
-            <option value="option38">Farmers Party </option>
-            <option value="option39">Economic Freedom Party</option>
-            <option value="option40">Federal Party of Kenya </option>
-            <option value="option41">Muungano Party</option>
-            <option value="option42">The National Party</option>
-            <option value="option43">Jirani Mzalendo Asili Party of Kenya</option>
-            <option value="option44">Chama Cha Mashinani </option>
-            <option value="option45">Alliance for Real Change </option>
-            <option value="option46">Forum For Republican Democracy - Asili </option>
-            <option value="option47">Republican Liberty Party</option>
-            <option value="option48">Roots Party of Kenya</option>
-            <option value="option49">Vibrant Democracy Party</option>
-            <option value="option50">Ubuntu People’s Forum</option>
-            <option value="option51">Devolution Party of Kenya </option>
-            <option value="option52">United Democratic Party</option>
-            <option value="option53">Kenya Reform Party </option>
-            <option value="option54">People’s Trust Party </option>
-            <option value="option55">Maendeleo Chap Chap</option>
-            <option value="option56">Democratic Congress </option>
-            <option value="option57">Liberal Democratic Party</option>
-            <option value="option58">Green Congress of  Kenya</option>
-            <option value="option59">National Liberal Party </option>
-            <option value="option60">Movement for Democracy and Growth</option>
-            <option value="option61">Alternative Leadership Party Of Kenya</option>
-            <option value="option62">Ukweli Party</option>
-            <option value="option63">Empowerment and Liberation Party</option>
-            <option value="option64">Third Way Alliance Kenya. </option>
-            <option value="option65">Justice and Freedom Party of Kenya</option>
-            <option value="option66">Grand Dream Development Party</option>
-            <option value="option67">United Green Movement</option>
-            <option value="option68">Usawa Kwa Wote formerly Civic Renewal Party</option>
-            <option value="option69">United Progressive Alliance</option>
-            <option value="option70">The Service Party</option>
-            <option value="option71">National Ordinary People Empowerment Union</option>
-            <option value="option72">National Reconstruction Alliance</option>
-            <option value="option73">Democratic Action PartyKenya</option>
-            <option value="option74">Party for Peace and Development</option>
-            <option value="option75">Chama Cha Kazi</option>
-            <option value="option76">Tujibebe Wakenya Party</option>
-            <option value="option77">Kenya Union Party </option>
-            <option value="option78">Umoja Summit Party</option>
-            <option value="option79">Pamoja African Alliance</option>
-            <option value="option80">Mabadiliko Party of Kenya </option>
-            <option value="option81">Entrust Pioneer Party</option>
-            <option value="option82">Party for Growth and Prosperity</option>
-            <option value="option83">Green Thinking Action Party</option>
-            <option value="option84">National Democracy Expansion Party</option>
-            <option value="option85">Unified Change Party</option>
-            <option value="option86">Universal Unity Party</option>
-            <option value="option87">Chama ya Mapatano of Kenya</option>
-            <option value="option88">The Equitable Party</option>
-            <option value="option89">Azimio la Umoja One Kenya Coalition party</option>
-            <option value="option90">The We Alliance Party</option>
-            <option value="option91">Democracy for the Citizens Party</option>
+            <option value="People's Liberation Party">People's Liberation Party</option>
+            <option value="The National Vision Party">The National Vision Party</option>
+            <option value="Labour Party of Kenya">Labour Party of Kenya</option>
+            <option value="Mwangaza Tu Party">Mwangaza Tu Party</option>
+            <option value="Party of Independent Candidate of Kenya">Party of Independent Candidate of Kenya</option>
+            <option value="Devolution Empowerment Party">Devolution Empowerment Party </option>
+            <option value="oKenya National Congress">Kenya National Congress</option>
+            <option value="Mazingira Green Party ">Mazingira Green Party </option>
+            <option value="National Democratic Movement">National Democratic Movement</option>
+            <option value="Wiper Democratic Movement">Wiper Democratic Movement</option>
+            <option value="Democratic Party of Kenya">Democratic Party of Kenya</option>
+            <option value="Party of National Unity">Party of National Unity</option>
+            <option value="United Democratic Alliance">United Democratic Alliance </option>
+            <option value="Agano Party">Agano Party</option>
+            <option value="Kenya Social Congress">Kenya Social Congress </option>
+            <option value="Orange Democratic Movement">Orange Democratic Movement</option>
+            <option value="People’s Party of Kenya">People’s Party of Kenya </option>
+            <option value="Forum for Restoration of DemocracyKenya">Forum for Restoration of DemocracyKenya</option>
+            <option value="Progressive Party of Kenya "> Progressive Party of Kenya </option>
+            <option value="Jubilee Party">Jubilee Party </option>
+            <option value="Maendeleo Democratic Party1">Maendeleo Democratic Party</option>
+            <option value="National Rainbow Coalition">National Rainbow Coalition </option>
+            <option value="Kenya African Democratic Union-Asili">Kenya African Democratic Union-Asili</option>
+            <option value="Kenya Patriots Party">Kenya Patriots Party</option>
+            <option value="Communist Party of Kenya">Communist Party of Kenya </option>
+            <option value="Kenya African National Union">Kenya African National Union</option>
+            <option value="Safina Party">Safina Party</option>
+            <option value="Chama Cha Uzalendo">Chama Cha Uzalendo </option>
+            <option value="National Agenda Party of Kenya">National Agenda Party of Kenya</option>
+            <option value="People’s Empowerment Party">People’s Empowerment Party</option>
+            <option value="Peoples Democratic Party">Peoples Democratic Party</option>
+            <option value="The New Democrats ">The New Democrats </option>
+            <option value="United Democratic Movement">United Democratic Movement</option>
+            <option value="Shirikisho Party of Kenya">Shirikisho Party of Kenya </option>
+            <option value="Party of Democratic Unity">Party of Democratic Unity</option>
+            <option value="Umoja na Maendeleo Party">Umoja na Maendeleo Party </option>
+            <option value="United Party of Independent Alliance (UPIA)">United Party of Independent Alliance (UPIA)</option>
+            <option value="Farmers Party ">Farmers Party </option>
+            <option value="Economic Freedom Party">Economic Freedom Party</option>
+            <option value="Federal Party of Kenya">Federal Party of Kenya </option>
+            <option value="Muungano Party">Muungano Party</option>
+            <option value="The National Party">The National Party</option>
+            <option value="Jirani Mzalendo Asili Party of Kenya">Jirani Mzalendo Asili Party of Kenya</option>
+            <option value="Chama Cha Mashinani">Chama Cha Mashinani </option>
+            <option value="Alliance for Real Change ">Alliance for Real Change </option>
+            <option value="Forum For Republican Democracy - Asili ">Forum For Republican Democracy - Asili </option>
+            <option value="Republican Liberty Party">Republican Liberty Party</option>
+            <option value="Roots Party of Kenya">Roots Party of Kenya</option>
+            <option value="Vibrant Democracy Party">Vibrant Democracy Party</option>
+            <option value="Ubuntu People’s Forum">Ubuntu People’s Forum</option>
+            <option value="Devolution Party of Kenya">Devolution Party of Kenya </option>
+            <option value="United Democratic Party">United Democratic Party</option>
+            <option value="Kenya Reform Party ">Kenya Reform Party </option>
+            <option value="People’s Trust Party">People’s Trust Party </option>
+            <option value="Maendeleo Chap Chap">Maendeleo Chap Chap</option>
+            <option value="Democratic Congress">Democratic Congress </option>
+            <option value="Liberal Democratic Party">Liberal Democratic Party</option>
+            <option value="Green Congress of  Kenya">Green Congress of  Kenya</option>
+            <option value="National Liberal Party">National Liberal Party </option>
+            <option value="Movement for Democracy and Growth">Movement for Democracy and Growth</option>
+            <option value="Alternative Leadership Party Of Kenya">Alternative Leadership Party Of Kenya</option>
+            <option value="Ukweli Party">Ukweli Party</option>
+            <option value="Empowerment and Liberation Party">Empowerment and Liberation Party</option>
+            <option value="Third Way Alliance Kenya.">Third Way Alliance Kenya. </option>
+            <option value="Justice and Freedom Party of Kenya">Justice and Freedom Party of Kenya</option>
+            <option value="Grand Dream Development Party">Grand Dream Development Party</option>
+            <option value="United Green Movement">United Green Movement</option>
+            <option value="Usawa Kwa Wote formerly Civic Renewal Party">Usawa Kwa Wote formerly Civic Renewal Party</option>
+            <option value="United Progressive Alliance">United Progressive Alliance</option>
+            <option value="The Service Party">The Service Party</option>
+            <option value="National Ordinary People Empowerment Union">National Ordinary People Empowerment Union</option>
+            <option value="National Reconstruction Alliance">National Reconstruction Alliance</option>
+            <option value="Democratic Action PartyKenya">Democratic Action PartyKenya</option>
+            <option value="Party for Peace and Development">Party for Peace and Development</option>
+            <option value="Chama Cha Kazi">Chama Cha Kazi</option>
+            <option value="Tujibebe Wakenya Party">Tujibebe Wakenya Party</option>
+            <option value="Kenya Union Part">Kenya Union Party </option>
+            <option value="Umoja Summit Party">Umoja Summit Party</option>
+            <option value="Pamoja African Alliance">Pamoja African Alliance</option>
+            <option value="Mabadiliko Party of Kenya">Mabadiliko Party of Kenya </option>
+            <option value="Entrust Pioneer Party">Entrust Pioneer Party</option>
+            <option value="Party for Growth and Prosperity">Party for Growth and Prosperity</option>
+            <option value="Green Thinking Action Party">Green Thinking Action Party</option>
+            <option value="National Democracy Expansion Party">National Democracy Expansion Party</option>
+            <option value="Unified Change Party">Unified Change Party</option>
+            <option value="Universal Unity Party">Universal Unity Party</option>
+            <option value="Chama ya Mapatano of Kenya">Chama ya Mapatano of Kenya</option>
+            <option value="The Equitable Party">The Equitable Party</option>
+            <option value="Azimio la Umoja One Kenya Coalition party">Azimio la Umoja One Kenya Coalition party</option>
+            <option value="The We Alliance Party">The We Alliance Party</option>
+            <option value="Democracy for the Citizens Party">Democracy for the Citizens Party</option>
            
 
         </select>
@@ -613,10 +698,17 @@
             </button>
         </div>
         
-        <input type="submit" value="Submit" id="submit">
+        <div class="sub">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+       
     </form>
 
-    <div id="status-message"></div>
+    <div id="custom-alert" class="alert" style="display: none;">
+      <p>Thank you! Form is submitted</p>
+      <button id="close-alert">Close</button>
+    </div>
+    
 
 
     <script src="fun.js"></script>

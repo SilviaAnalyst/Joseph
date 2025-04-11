@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 
 
@@ -58,6 +59,10 @@ form input {
     transition: border 0.3s, box-shadow 0.3s;
 }
 
+ #email{
+    text-transform: lowercase;
+ }
+
 form select  {
     padding: 12px 14px;
     font-size: 16px;
@@ -93,6 +98,19 @@ form button:hover {
     width: 100px;
 }
 
+.sub input{
+    width: 100%;
+    background-color: #011603;
+    text-transform: capitalize;
+    color: #ffffff;
+    
+}
+
+.sub input:hover{
+    background-color: #1e6e43;
+
+}
+
 a{
     text-decoration: none;
     color: #ffffff;
@@ -101,3 +119,32 @@ a{
 .red:hover{
     background-color: rgb(233, 38, 38);
 }
+
+#custom-alert {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 300px;
+  }
+  
+  #custom-alert button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  #custom-alert button:hover {
+    background-color: #45a049;
+  }
+  
