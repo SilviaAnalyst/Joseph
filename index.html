@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+  <div id="welcome-screen">
+    <h1>Welcome to The RiggyG Movement </h1>
+  </div>
+
+
 <div class="main">
     
     <h1>Registration Form</h1>
@@ -26,13 +33,19 @@
         <label for="email">Email:</label>
         <input id="email" type="email" name="email" required><br>
 
-       <label for="id">ID/ passport</label>
-         <select id="id" >
+        <div class="id">
+          <label for="id">ID/ passport</label>
+         <select id="id" name="id" required>
             <option value="" disabled selected></option>
-            <option value="option1">ID</option>
-            <option value="option2">passport</option>
-            <input type="text" name="id">
+            <option value="ID">ID</option>
+            <option value="passport">passport</option>  
         </select>
+        </div>
+
+       
+
+        <input type="text"  name="identification number"  required>
+
         
        
 
@@ -42,7 +55,7 @@
        
         <label for="gender">Gender</label>
         <select id="gender" name="gender" required>
-          <option value="" disabled selected>Select Gender</option>
+          <option value="" disabled selected></option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select>
@@ -68,7 +81,7 @@
       
 
         <label for="County">County</label>
-        <select id="Political Party"name="county">
+        <select id="Political Party"name="county" required>
             <option value="" disabled selected></option>
             <option value="Mombasa">Mombasa</option>
             <option value="Kwale">Kwale</option>
@@ -123,7 +136,7 @@
 
         
           <label for="county"> Constituency:</label>
-          <select id="county" name="constituency">
+          <select id="county" name="constituency" required>
             <option value="" disabled selected></option>
             <optgroup label="Mombasa">
               <option>Changamwe</option>
@@ -593,7 +606,7 @@
 
 
         <label for="Political Party">Political Party</label>
-         <select id="Political Party" name="political party">
+         <select id="Political Party" name="political party" required>
             <option value="" disabled selected></option>
             <option value="People's Liberation Party">People's Liberation Party</option>
             <option value="The National Vision Party">The National Vision Party</option>

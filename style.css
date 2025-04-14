@@ -9,7 +9,7 @@
 
 
 body {
-    background: linear-gradient(to right, #023b09, #0d0d0e); /* soft green to soft gray */
+    background: linear-gradient(to right, #012b01, #0d0d0e); /* soft green to soft gray */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     display: flex;
@@ -18,6 +18,33 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+
+
+
+    /* Welcome Animation Screen */
+    #welcome-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0f5132;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        z-index: 999;
+        animation: fadeOut 3s ease 3s forwards;
+      }
+  
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+  
 
 /* Main form wrapper */
 .main {
@@ -61,6 +88,18 @@ form input {
 
  #email{
     text-transform: lowercase;
+ }
+
+ #id{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    align-content: center;
+    position: absolute;
+ }
+
+ .id{
+    position: relative;
  }
 
 form select  {
