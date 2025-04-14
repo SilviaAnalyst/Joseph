@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Rigathi Gachagua</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +36,7 @@
 
         <div class="id">
           <label for="id">ID/ passport</label>
-         <select id="id" name="id" required>
+         <select id="id" name="id" required >
             <option value="" disabled selected></option>
             <option value="ID">ID</option>
             <option value="passport">passport</option>  
@@ -43,8 +44,8 @@
         </div>
 
        
-
-        <input type="text"  name="identification number"  required>
+        <label  id="inputLabel" for="idInput">Enter ID:</label>
+        <input type="text"  id="idInput" name="identification number"  required>
 
         
        
@@ -606,7 +607,7 @@
 
 
         <label for="Political Party">Political Party</label>
-         <select id="Political Party" name="political party" required>
+         <select id="party" name="political party" required>
             <option value="" disabled selected></option>
             <option value="People's Liberation Party">People's Liberation Party</option>
             <option value="The National Vision Party">The National Vision Party</option>
@@ -705,7 +706,7 @@
        
         <div class="but">
 
-            <button >Opt-in</button>
+          <button id="optInBtn" type="button" class="grey" disabled>Opt In</button>
             <button class="red">
              <a href="https://ippms.orpp.or.ke/auth/login?ReturnUrl=%2FSelfService%2FPartyEnrollment%3F_gl%3D1%2Adp2w4a%2A_ga%2AODYxOTQ5OTA1LjE3NDQxOTc1MTM.%2A_ga_ZLNTCZ8EPZ%2AMTc0NDE5NzUxMi4xLjEuMTc0NDE5NzgzMy4wLjAuMA"  target="_blank">Opt-out</a>
             </button>
@@ -716,6 +717,8 @@
         </div>
        
     </form>
+
+    <div id="popup" class="popup"></div>
 
     <div id="custom-alert" class="alert" style="display: none;">
       <p>Thank you! Form is submitted</p>
