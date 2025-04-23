@@ -58,7 +58,8 @@ idType.addEventListener("change", function () {
 form.addEventListener('submit', e => {
   
   e.preventDefault()
-  
+  document.getElementById('timestamp').value = new Date().toLocaleString();
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
   .then(response => {
     // Show the custom alert
